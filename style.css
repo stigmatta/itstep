@@ -1,0 +1,108 @@
+.grid-container {
+    display: grid;
+    padding: 15px 30px;
+    grid-gap:20px;
+    border-radius: 5px;
+    background-color: #0d233d;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header{
+    grid-column: 1/5;
+    grid-row: 1/3;
+    background-color: rgb(235, 225, 225);
+    display: flex;
+} 
+header img{
+    overflow: hidden;
+    justify-self: flex-start;
+}
+menu{
+    padding-left: 0;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  flex-start;
+    width: fit-content;
+    padding-right: 1em;
+    padding-bottom: 5em;
+    grid-row: 4/7;
+}
+.menu-column{
+    margin-top: 2.5em;
+}
+ul{
+    list-style-position: outside;
+    list-style-type: none;
+    background-color: #0d233d;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    height:2em;
+    background-color: rgb(8, 5, 4);
+    text-align: center;
+    line-height: 2em;
+}
+main{
+    grid-column: 2/3;
+    margin-top:1em;
+    grid-row: 4/6;
+    width:30em;
+    height: 60vh;
+}
+main img{
+    width: 100%;
+    height: 100%;
+}
+.right{
+    grid-column: 3/4;
+    grid-row: 3/5;
+    background-color: rgb(77, 158, 77);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-row: 7/8;
+    grid-column: 1/5;
+    padding-right: 6em;
+    background-color: rgb(8, 5, 4);
+    font-size: 0.5em;
+}
+header,.right,footer{
+    height: 5em;
+}
+
+nav{
+    background-color: rgb(8, 5, 4);
+    padding-right: 3em;
+    height:2em ;
+    display: flex;
+    grid-row:3/4;
+    grid-column: 1/5;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 8em;
+}
+nav a {
+    margin-right: 3em;
+}
+.right-menu{
+    background-color: rgb(8, 5, 4);
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    grid-row:4/7;
+    grid-column: 4/5;
+}
+.right-menu img{
+    width:fit-content
+}
